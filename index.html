@@ -9,28 +9,46 @@
     body {
       margin: 0;
       padding: 0;
-      border: 1px solid black;
       height: 100vh;
       /* width: 100vw; */
     }
     header {
-      border: 1px red solid;
-      height: 50px;
+      /*  border: 1px solid blue; */
+      height: 60px;
       /*   background-color: #f2f2f2; */
     }
+
+    .header__nav {
+      /*  height: inherit; */
+      margin: 10px 0; /* De esta manera centré el nav dentro de header */
+    }
     .header__nav-list {
+      /*  border: 1px solid red; */
       display: flex;
       justify-content: flex-end;
-      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
     .header__nav-list-item {
-      color: #777777;
+      color: black;
       margin-right: 10px;
       font-family: Arial, Helvetica, sans-serif;
-      font-weight: 400;
-      line-height: 24px;
-      font-size: 13px;
+      font-weight: 400; /* Propiedad google */
+      line-height: 24px; /* Propiedad google */
+      font-size: 13px; /* Propiedad google */
+      list-style: none;
+      margin: auto 5px;
+    }
+    .icon-google {
+      width: 25px;
+      height: 25px;
+      padding-top: 7px;
+    }
+    .pic-google {
+      border-radius: 50%;
+      line-height: 0;
+      padding-top: 3px;
     }
   </style>
   <body>
@@ -39,8 +57,20 @@
         <ul class="header__nav-list">
           <li class="header__nav-list-item">Gmail</li>
           <li class="header__nav-list-item">Imágenes</li>
-          <li class="header__nav-list-item">Menú</li>
-          <li class="header__nav-list-item">Pic</li>
+          <li class="header__nav-list-item">
+            <img
+              class="icon-google"
+              src="./images/google-menu-icon.png"
+              alt=""
+            />
+          </li>
+          <li class="header__nav-list-item">
+            <img
+              class="pic-google"
+              src="https://lh3.googleusercontent.com/ogw/ADGmqu-VMTvul0j2uB3hO8_z_PMbOm3cZChJ2DaFaABx=s32-c-mo"
+              alt=""
+            />
+          </li>
         </ul>
       </nav>
     </header>
