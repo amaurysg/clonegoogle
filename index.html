@@ -79,6 +79,7 @@
       width: 80%;
       margin: 0 auto;
       border-radius: 15px;
+      outline: none;
     }
     input.buscar {
       border: 0px;
@@ -120,6 +121,8 @@
       padding-left: 10px;
       font-family: arial;
       width: 70%;
+      outline: none;
+      padding-left: 25px;
     }
     .buttons-container {
       height: 36px;
@@ -137,6 +140,7 @@
       margin-right: 10px;
       padding: 0 16px;
       cursor: pointer;
+      outline: none;
     }
     .buttons-container-items:hover {
       border: 1px solid #5f6368;
@@ -146,6 +150,19 @@
       color: #222;
       text-align: center;
       font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 500px) {
+      .container-img {
+        margin-top: 80px;
+      }
+      .container-img img {
+        width: 80%;
+      }
+      .input-container {
+        margin-top: 20px;
+        width: 100%;
+      }
     }
   </style>
   <body>
