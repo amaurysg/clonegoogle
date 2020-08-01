@@ -62,7 +62,7 @@
     }
     .container-img {
       background-repeat: no-repeat;
-      background-position-y: center;
+
       display: flex;
       /*  border: 1px solid red; */
       justify-content: center;
@@ -107,11 +107,17 @@
       justify-content: center;
       margin-top: 5px;
     }
+    .input-container:hover {
+      box-shadow: 0 1px 6px 0 #20212447;
+      border-color: #dfe1e500;
+    }
 
     .input-logo {
       display: flex;
-      background: url("images/search.svg") center, url("images/mic.svg");
-      background-size: 20px, 20px;
+      background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png")
+          center,
+        url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png");
+      background-size: 16px, 16px;
       background-repeat: no-repeat, no-repeat;
       background-position-x: right, left;
       background-position: left, right;
@@ -197,10 +203,16 @@
       <div class="input-container">
         <input class="input-logo" type="text" />
       </div>
-      <div class="buttons-container">
-        <button class="buttons-container-items">Buscar con Google</button
-        ><button class="buttons-container-items">Me siento con suerte</button>
-      </div>
+
+      <section class="buttons-container">
+        <div>
+          <button class="buttons-container-items">Buscar con Google</button>
+        </div>
+        <div>
+          <button class="buttons-container-items">Me siento con suerte</button>
+        </div>
+      </section>
+
       <div class="traductor-container">
         <p class="traductor-container-test">
           Ofrecido por Google en:
