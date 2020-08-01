@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Google Clone</title>
   </head>
+
   <style>
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
       /* width: 100vw; */
     }
     header {
-      /*  border: 1px solid blue; */
+      border: 1px solid blue;
       height: 60px;
       /*   background-color: #f2f2f2; */
     }
@@ -39,6 +42,7 @@
       font-size: 13px; /* Propiedad google */
       list-style: none;
       margin: auto 5px;
+      cursor: pointer;
     }
     .icon-google {
       width: 25px;
@@ -49,6 +53,99 @@
       border-radius: 50%;
       line-height: 0;
       padding-top: 3px;
+    }
+    main {
+      margin: 0;
+      padding: 0;
+      height: 80vh;
+      border: 1px solid red;
+    }
+    .container-img {
+      background-repeat: no-repeat;
+      background-position-y: center;
+      display: flex;
+      /*  border: 1px solid red; */
+      justify-content: center;
+      margin-top: 109px;
+    }
+    .container-img img {
+      width: 40%;
+    }
+
+    div.buscador {
+      border: 0.5px solid #d7d7d7;
+      padding: 4px;
+      height: 22px;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 15px;
+    }
+    input.buscar {
+      border: 0px;
+      width: 240px;
+      position: relative;
+      background: transparent;
+      outline: none;
+      bottom: 4px;
+      padding: 2px;
+    }
+    input.image_buscar {
+      width: 20px;
+      border: 0px;
+      position: relative;
+      top: 1px;
+    }
+    .ii {
+      border: none;
+      outline: none;
+      margin-left: 5px;
+    }
+    .input-container {
+      height: 2em;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+    }
+
+    .input-logo {
+      display: flex;
+      background: url("images/search.svg") center, url("images/mic.svg");
+      background-size: 20px, 20px;
+      background-repeat: no-repeat, no-repeat;
+      background-position-x: right, left;
+      background-position: left, right;
+      border-radius: 25px;
+      border-radius: 20px;
+      border: 0.5px solid #d7d7d7;
+      padding-left: 10px;
+      font-family: arial;
+      width: 70%;
+    }
+    .buttons-container {
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .buttons-container-items {
+      height: 100%;
+      border: 1px solid #f7f7ff;
+      border-radius: 4px;
+      font-size: 0.9em;
+      background-color: #f2f2f2;
+      /*  margin-top: 27px; */
+      margin-right: 10px;
+      padding: 0 16px;
+      cursor: pointer;
+    }
+    .buttons-container-items:hover {
+      border: 1px solid #5f6368;
+    }
+    .traductor-container {
+      margin-top: 2.5em;
+      color: #222;
+      text-align: center;
+      font-size: 0.8em;
     }
   </style>
   <body>
@@ -74,5 +171,38 @@
         </ul>
       </nav>
     </header>
+
+    <main class="main">
+      <div class="container-img">
+        <img src="./images/google-logo-ok.png" alt="" />
+      </div>
+
+      <div class="input-container">
+        <input class="input-logo" type="text" />
+      </div>
+      <div class="buttons-container">
+        <button class="buttons-container-items">Buscar con Google</button
+        ><button class="buttons-container-items">Me siento con suerte</button>
+      </div>
+      <div class="traductor-container">
+        <p class="traductor-container-test">
+          Ofrecido por Google en:
+          <span> <a href="">(Español Latinoamérica)</a></span>
+        </p>
+      </div>
+      <!--     <div class="buscador">
+        <input class="ii" placeholder="Buscar" type="text" name="" id="" />
+      </div> -->
+
+      <!--       <div class="buscador">
+        <form action="#">
+          <input class="buscar" type="text" />
+          <input
+            class="image_buscar"
+            type="image"
+            src="./images/google-menu-icon.png"
+          />
+        </form> -->
+    </main>
   </body>
 </html>
