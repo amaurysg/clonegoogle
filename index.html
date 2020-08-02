@@ -16,7 +16,7 @@
       /* width: 100vw; */
     }
     header {
-      border: 1px solid blue;
+    /*   border: 1px solid blue; */
       height: 60px;
       /*   background-color: #f2f2f2; */
     }
@@ -54,12 +54,7 @@
       line-height: 0;
       padding-top: 3px;
     }
-    main {
-      margin: 0;
-      padding: 0;
-      height: 80vh;
-      border: 1px solid red;
-    }
+
     .container-img {
       background-repeat: no-repeat;
 
@@ -158,6 +153,106 @@
       font-size: 0.8em;
     }
 
+    
+    .main-border {
+      border: 1px solid black;
+    }
+    
+    .main-container {
+      margin: 0;
+      padding: 0;
+      height: 80vh;
+      margin-top: 150px;
+      text-align: center;
+    }
+
+    .section-input {
+      display: flex;
+      border: 1px solid #dfe1e5;
+      border-radius: 25px;
+      width: 80%;
+       margin: 0 auto;
+      justify-content: center;
+    }
+    .section-input:hover{
+
+        box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    }
+
+
+    .main-img-logo{
+      background: url("images/google-logo-ok.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+    }
+    .div-search{
+      width: 80%;
+      height: 34px;
+      display: flex;
+     
+    }
+    .div-search input{
+      width: 100%;
+      border:none; 
+      outline: none;
+      
+    }
+    .span-img{
+      background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      margin:auto
+    }
+      .a-img{
+      background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      margin:auto;
+    }
+
+    .div-buttons{
+      background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    }
+      .div-buttons:hover{
+
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+      }
+
+    
+      p{
+        font-size: .8em;
+}
+
+
+      }
+
+    
+
+
     @media screen and (max-width: 500px) {
       .container-img {
         margin-top: 80px;
@@ -167,7 +262,7 @@
       }
       .input-container {
         margin-top: 20px;
-        width: 100git %;
+        width: 100%;
       }
     }
   </style>
@@ -195,7 +290,7 @@
       </nav>
     </header>
 
-    <main class="main">
+<!--     <main class="main">
       <div class="container-img">
         <img src="./images/google-logo-ok.png" alt="" />
       </div>
@@ -214,11 +309,49 @@
       </section>
 
       <div class="traductor-container">
+        g
         <p class="traductor-container-test">
           Ofrecido por Google en:
           <span> <a href="">(Español, Latinoamérica)</a></span>
         </p>
       </div>
+    </main> -->
+
+
+      <main class="main-container">
+
+        <section class="">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7GehYKdImLiMpzSon3pKKLVhwGS_S4Ssjj9WHNIfUYXZiyrzk7w&s" alt="">
+        </section>
+          
+        
+
+        <section class="section-input">
+          <span class="span-img">
+          
+          </span>
+          <div class="div-search">
+            <input  type="text" placeholder="" />
+          </div>
+          <a  class="a-img" href=""> </a>
+        </section>
+
+        <section>
+          <div >
+            <button class="div-buttons">Buscar en Google</button>
+            <button class="div-buttons">Me siento con suerte</button>
+          </div>
+        </section>
+        <div>
+          <p class="traductor-container-test">
+            Ofrecido por Google en:
+            <span> <a href="">(Español Latinoamérica)</a></span>
+          </p>
+        </div>
+        
+
+      </main>
+
       <!--     <div class="buscador">
         <input class="ii" placeholder="Buscar" type="text" name="" id="" />
       </div> -->
